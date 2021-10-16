@@ -15,10 +15,14 @@ library(semPlot)      # Diagrams of models estimated with lavaan
 setwd("C:/Users/Rashel/Dropbox/Studie/Survey-Research")
 
 # Read data
+dir.create('data')
+dir.create('src')
 data82total<-read.csv("data/rawdata.csv")
 
 # Start sending analysis output to text-file with "name.txt" and to screen (split = TRUE)
-sink("gen/temp/temp_output.txt", split = TRUE) 
+dir.create('gen')
+dir.create('gen/temp')
+sink("gen/temp/temp_output.txt") 
 
 # Start sending plotting output to pdf file with "name.pdf"
 pdf("gen/temp/temp_output.pdf")
