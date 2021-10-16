@@ -130,4 +130,6 @@ data82$weird2[data82$Z_v17.t < -3.33] <- 1
 
 write.csv(data82, "gen/temp/clean_data.csv", row.names = FALSE)
 
+dir.create('gen/output')
+
 
